@@ -1,5 +1,4 @@
 #include<iostream>
-
 using namespace std;
 
 #define loop for(int i=0;i<n;i++)
@@ -8,21 +7,16 @@ using namespace std;
 int searching(int arra[],int n,int value)
 {
     loop
-    {
-        if(arra[i]==value){
+      {
+        if(arra[i]==value){ return i; break;}}
 
-            return i;
-
-            break;
-        }
-    }
-    return -1;
+      return -1;
 }
 int main()
 {
-    int arra[]={2,9,5,4,7,0,8,3};
+    int arra[8]={2,9,5,4,7,0,8,3};
 
-    int len = sizeof(arra)/sizeof(arra[0]);
+    int len = 8;
 
     int key= 7;
 

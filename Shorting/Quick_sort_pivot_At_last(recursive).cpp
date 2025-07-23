@@ -12,7 +12,6 @@ void Traverse()
     }
     cout<<endl;
 }
-
 int Partition(int low,int high)
 {
     int pivot= arra[high];
@@ -36,11 +35,11 @@ void quicksort(int low,int high){
 
     if(low<high){
 
-   int pos= Partition(low,high);
+    int pos= Partition(low,high);
 
-   quicksort(low,pos-1);
+    quicksort(low,pos-1);
 
-   quicksort(pos+1,high);
+    quicksort(pos+1,high);
 
     }
 }
@@ -52,7 +51,7 @@ int main()
 
     quicksort(low,high);
 
-   Traverse();
+    Traverse();
 
-   return 0;
+    return 0;
 }

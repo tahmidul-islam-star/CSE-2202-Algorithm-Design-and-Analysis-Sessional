@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Tahmidul Islam
 int arra2[1000];
 
 void print(int arra[],int n)
@@ -12,6 +13,7 @@ void print(int arra[],int n)
     }
     cout<<endl;
 }
+//Tahidul Islam
 void Merge(int arra[],int mid,int low,int high)
 {
     int i=low;
@@ -39,7 +41,7 @@ void Merge(int arra[],int mid,int low,int high)
     {
         arra2[k++]= arra[j++];
     }
-     for(int i=low;i<=high;i++)
+    for(int i=low;i<=high;i++)
     {
         arra[i]= arra2[i];
     }
@@ -61,15 +63,15 @@ int main()
 {
     int n;cin>>n;
 
-   int arra[n];
+    int arra[n];
 
-   for(int i=0;i<n;i++)
-   {
-       cin>>arra[i];
-   }
-   Merge_sort(arra,0,n-1);
+    for(int i=0;i<n;i++)
+    {
+    cin>>arra[i];
+    }
+    Merge_sort(arra,0,n-1);
 
-   print(arra,n);
+    print(arra,n);
 
-   return 0;
+    return 0;
 }
